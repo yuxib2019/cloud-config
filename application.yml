@@ -1,19 +1,32 @@
+server:
+  port: 8201
 spring:
   profiles:
     active:
-    - dev
+      - dev
 ---
 spring:
   profiles: dev #开发模式
   application:
-      name: cloud-confing-spring-dev
+    name: cloud-confing-spring-dev-client
+
+eureka: #客服端注册到eueka服务列表
+  client:
+    server-url:
+      defaultZone:http://localhost:8761/eureka   #注册的地址必须和8761中地址一致
 ---
+server:
+  port: 8202
 spring:
   profiles:
     active:
-    - test
+      - test
 ---
 spring:
   profiles: test #开发模式
   application:
-      name: cloud-confing-spring-test
+    name: cloud-confing-spring-test-client
+eureka: #客服端注册到eueka服务列表
+  client:
+    server-url:
+      defaultZone:http://localhost:8761/eureka   #注册的地址必须和8761中地址一致
