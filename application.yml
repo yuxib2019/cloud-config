@@ -5,7 +5,7 @@ spring:
 ---
 spring:
   profiles: dev #开发模式
-    application:
+  application:
       name: cloud-confing-spring-dev
 ---
 spring:
@@ -15,5 +15,5 @@ spring:
 ---
 spring:
   profiles: test #开发模式
-    application:
+  application:
       name: cloud-confing-spring-test
