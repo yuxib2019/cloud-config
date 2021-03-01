@@ -4,7 +4,7 @@ spring:
       - dev
 ---
 spring:
-  profiles:  dev #开发模式
+  profiles: dev #开发模式
     application:
       name: cloud-confing-spring-dev
 ---
