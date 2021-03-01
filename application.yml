@@ -1,7 +1,7 @@
 spring:
   profiles:
     active:
-      - dev
+    - dev
 ---
 spring:
   profiles: dev #开发模式
@@ -11,7 +11,7 @@ spring:
 spring:
   profiles:
     active:
-      - test
+    - test
 ---
 spring:
   profiles: test #开发模式
