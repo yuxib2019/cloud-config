@@ -3,7 +3,7 @@ server:
 spring:
   profiles:
     active:
-      - dev
+    - dev
 ---
 spring:
   profiles: dev #开发模式
@@ -20,7 +20,7 @@ server:
 spring:
   profiles:
     active:
-      - test
+    - test
 ---
 spring:
   profiles: test #开发模式
