@@ -33,3 +33,5 @@ security:
       grant-type: password
       scope: select
       access-token-uri: http://yueai-gateway.com:8081/oauth/token
+ name: yueai-service-prod
+ password: root
