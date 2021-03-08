@@ -1,6 +1,12 @@
+spring:
+  profiles: 
+    active: 
+      -dev 
+---
 server:
   port: 8001
 spring:
+  profiles: dev
   application:
     name: yueai-user-provider
   main:
@@ -35,5 +41,3 @@ security:
       grant-type: password
       scope: select
       access-token-uri: http://yueai-gateway.com:8081/oauth/token
- name: yueai-service-prod
- password: root
