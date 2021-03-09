@@ -1,6 +1,7 @@
 ﻿server:
   port: 8002
 spring:
+  profiles: dev
   application:
     name: yueai-user-provider
   main:
