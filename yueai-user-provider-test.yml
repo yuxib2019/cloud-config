@@ -15,12 +15,6 @@ spring:
     host: 127.0.0.1
     timeout: 50000
     port: 6379
-eureka:
-  instance:
-    prefer-ip-address: false
-  client:
-    server-url:
-      defaultZone:http://localhost:8761/eureka
 logging:
   level:
     com.yueai.mapper: DEBUG
