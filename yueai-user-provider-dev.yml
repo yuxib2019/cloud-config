@@ -1,0 +1,41 @@
+﻿server:
+  port: 9351
+spring:
+  application:
+    name: yueai-user-provider
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://rm-8vb07626ul928rj43zo.mysql.zhangbei.rds.aliyuncs.com:3306/acgn_shop?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: yueai
+    password: henHEN123
+  redis:
+    database: 1
+    host: 127.0.0.1
+    timeout: 50000
+    port: 6379
+    password: henHEN123
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    server-url:
+      defaultZone:http://127.0.0.1:8761/eureka
+logging:
+  level:
+    com.yueai.mapper: DEBUG
+security:
+  oauth2:
+    resource:
+      tokenInfoUri: http://127.0.0.1:9551/oauth/check_token
+      preferTokenInfo: true
+    client:
+      client-id: client_1
+      client-secret: 123456
+      grant-type: password
+      scope: select
+      access-token-uri: http://127.0.0.1:9551/oauth/token
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.yueai.entity   # 所有Entity别名类所在包
