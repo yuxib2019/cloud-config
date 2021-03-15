@@ -32,3 +32,5 @@ security:
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   type-aliases-package: com.yueai.entity   # 所有Entity别名类所在包
+env:
+  test 
